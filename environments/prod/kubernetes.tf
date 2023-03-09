@@ -5,5 +5,6 @@ resource "kubernetes_namespace" "ddddonuts" {
 }
 
 module "signoz" {
-  source = "../../modules/signoz"
+  source    = "../../modules/signoz"
+  namespace = "signoz"
 }
