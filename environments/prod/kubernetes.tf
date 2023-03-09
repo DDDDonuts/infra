@@ -3,3 +3,7 @@ resource "kubernetes_namespace" "ddddonuts" {
     name = "ddddonuts"
   }
 }
+
+module "signoz" {
+  source = "../../modules/signoz"
+}
